@@ -9,7 +9,7 @@ let db = null;
 const intializeDBAndServer = async () => {
   try {
     db = await open({
-      fileName: dbPath,
+      filename: dbPath,
       driver: sqlite3.Database,
     });
 
